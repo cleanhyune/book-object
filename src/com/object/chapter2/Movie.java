@@ -1,5 +1,6 @@
 package com.object.chapter2;
 
+import com.object.chapter2.discount.DefaultDiscountPolicy;
 import com.object.chapter2.discount.DiscountPolicy;
 
 import java.time.Duration;
@@ -24,6 +25,10 @@ public class Movie {
             return this.fee.minus(discountAmount);
         }
         return this.fee;
+    }
+
+    public void changeDiscountPolicy(DiscountPolicy discountPolicy) {
+        this.discountPolicy = discountPolicy;
     }
 
     public Money getFee() {

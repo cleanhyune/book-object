@@ -3,7 +3,7 @@ package com.object.chapter2.discount;
 import com.object.chapter2.Money;
 import com.object.chapter2.Screening;
 
-public class AmountDiscountPolicy extends DiscountPolicy{
+public class AmountDiscountPolicy extends DefaultDiscountPolicy {
 
     private Money discountAmount;
 
